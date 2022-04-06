@@ -1,0 +1,122 @@
+
+.section-intro__social-links {
+  padding-left: 11px;
+}
+
+.section-intro__top-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.story__social-images {
+  display: flex;
+}
+
+.story__social-link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
+  margin-bottom: 0 !important;
+}
+
+.story__social-link:last-child {
+  margin-right: 0;
+}
+
+.story__social-icon {
+  fill: #006ba6;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.story__social-icon:hover {
+  fill: #84329B;
+}
+
+.infra-map__content {
+  display: flex;
+  margin-top: 45px;
+}
+
+@media (max-width: 991px) {
+  .infra-map__content {
+    flex-direction: column-reverse;
+  }
+}
+
+.infra-map__modal {
+  display: none;
+}
+
+.infra-map__card-col {
+  width: 300px;
+  margin-right: 45px;
+  flex: 0 1 auto;
+}
+
+@media (max-width: 991px) {
+  .infra-map__card-col {
+    width: auto;
+    max-width: 400px;
+    margin: -45px auto 0 auto;
+  }
+}
+
+@media (max-width: 599px) {
+  .infra-map__card-col {
+    margin: -22px auto 0 auto;
+  }
+}
+
+.hide-card .infra-map__card-col {
+  display: none;
+}
+
+.infra-map__wrap {
+  flex: 1 1 auto;
+}
+
+.infra-map__state {
+  fill: #fff;
+}
+
+.marker {
+  cursor: pointer;
+}
+
+.marker:hover .main-pin-path,
+.marker.active .main-pin-path {
+  fill: #84329B;
+}
+
+.zoom-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 991px) {
+  .zoom-buttons {
+    display: none;
+  }
+}
+
+.zoom-button:first-child {
+  margin-right: 11px;
+}
+
+.zoom-button {
+  cursor: pointer;
+}
+
+.zoom-button:hover .zoom-button__outline {
+  stroke: #84329B;
+}
+
+.zoom-button,
+.zoom-button svg {
+  width: 40px;
+  height: 40px;
+}
