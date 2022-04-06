@@ -48,3 +48,7 @@
 .modal-overlay.closed {
   display: none;
 }
+
+.overflowHidden {
+  overflow: hidden !important;
+}

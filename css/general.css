@@ -69,7 +69,7 @@ a:focus {
   color: #84329B;
 }
 
-.section-title {
+.page-section-intro__title {
   font-size: 2.5rem;
   letter-spacing: -.2px;
   line-height: 2.5rem;
@@ -78,7 +78,7 @@ a:focus {
   color: #343F49;
 }
 
-.section-text {
+.page-section-intro__text {
   font-size: 1.5rem;
   line-height: 2rem;
   margin-top: 22px;
