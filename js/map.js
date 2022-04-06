@@ -324,7 +324,7 @@ jQuery(function($){
     // build story data
     var itemHtml = '<article class="article-modal">';
     itemHtml += closeIcon;
-    itemHtml += '<h2 class="article-modal_title">' + item.title +  '</h2>';
+    itemHtml += '<h2 class="article-modal__title">' + item.title +  '</h2>';
 
     if (item.image_url.length > 0) {
       itemHtml += '<div class="article-modal__image-wrap"><img alt="' + item.image_alt + '" src="' + item.image_url + '" /></div>';
@@ -338,7 +338,7 @@ jQuery(function($){
     $('.modal-content').append(itemHtml);
 
     // append social links
-    var shareLinks = $( ".section-intro__social-links" ).clone(true);
+    var shareLinks = $( ".section-intro__social-wrap" ).clone(true);
     var modalShare = $('.article-modal__share');
     modalShare.html(shareLinks);
 
@@ -451,5 +451,9 @@ jQuery(function($){
   }
 
   d3.selectAll('.zoom-button').on('click', zoomClick);
+
+  $('.section-intro__social-open-mobile').on('click', function() {
+    $('.section-intro__social-wrap').toggleClass('open');
+  });
 
 });
